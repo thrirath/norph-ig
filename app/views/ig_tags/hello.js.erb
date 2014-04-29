@@ -1,0 +1,8 @@
+$("#time_div").append('<h1>####</h1><br>'+
+	'<% @result.each do |pic| %>'+
+		'<%= pic.caption.from.username %><br>'+
+		'<%= image_tag(pic.images.thumbnail.url) %><br>'+
+		'<%= pic.caption.text %><br>'+
+		'<%= link_to 'source', pic.link %><br>'+
+		'#####<p>'
+	'<% end %>')

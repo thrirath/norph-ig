@@ -1,0 +1,26 @@
+<%= @page_pagination %><br>
+<h3>
+	<% (1..@page_count).each do |i|%>
+		<%= link_to i, show_path(i) %>
+	<% end %>
+	<br>
+</h3>
+<h1><%= @media_to_show.count %></h1><br>
+<% @media_to_show.each do |media| %>
+	<%= media.user.username %><br>
+	<% image_tag(media.images.thumbnail.url) %><br>
+	<%= media.caption.text unless media.caption == nil %><br>
+	<%= media.id %><br>
+	<%= link_to 'source', media.link %><br>
+	
+	######<p>
+<% end %>
+
+<%= @media_to_show[0].created_time  %>
+
+<h3>
+	<% (1..@page_count).each do |i|%>
+		<%= link_to i, show_path(i) %>
+	<% end %>
+	<br>
+</h3>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <link rel="shortcut icon">
+		<script>
+		$(document).ready(function()
+		{
+			OnLoad()
+
+			$("#Searchbox").focus()
+			$(".show-hide-btn").click(function(){		
+				$("#filter-bar").toggle("Normal")
+				$("#plus-btn").toggle()
+				$("#minus-btn").toggle()
+			})
+
+			$("#removesearch").click(function()
+			{	
+				$("#Searchbox").focus()
+				$("#Searchbox").val("")
+			})
+		})
+
+		function OnLoad()
+		{
+			$("#plus-btn").hide()
+		}
+		</script>
+
+	</head>
+	<body>
+			<nav class="navbar navbar-default" role="navigation" style="background-color:#2A7F86;border-color:#1B8DD0">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#" style="">Brand</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right" style="margin-right:5%">
+
+				      <form class="navbar-form navbar-left" role="search" style="margin-top:5px;margin-bottom:5px;width:500px !important;">
+				        <div>
+				        	<a class="search-link" href=""><span class="rightsearch glyphicon glyphicon-search"></span></a>
+				        	<span class="removesearch glyphicon glyphicon-remove-circle" id="removesearch"></span>
+				        	<input type="text" id="Searchbox" class="roundsearch" placeholder="Type Search #Tag">
+				          	<div class="leftsearch"></div>
+				        </div>
+				      </form>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<div class="container" style="">
+				<div class="well" style="min-height:80px;background-color: #E8FBFF;border-radius:10px">
+
+					<div class="right-side show-hide-btn" id="plus-btn"><span class="glyphicon glyphicon-plus"></span></div>
+					<div class="right-side show-hide-btn" id="minus-btn"><span class="glyphicon glyphicon-minus"></span></div>
+
+					<h1 style="font-family:'century gothic'">Filter Option</h1>
+					<div id="filter-bar" class="filter-bar">
+						<form class="form-group">
+							<input type="checkbox" class="radio-lg"> Message <br>
+							<input type="checkbox" class="radio-lg"> Photo <br>
+							<input type="checkbox" class="radio-lg"> Video <br>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container" id="column">
+
+
+				<!-- 1 Tab -->
+				<div class="messagebox">
+					<div class="header">
+						<img class="avartar" src="images/4.png">
+						<span class="header-text">First</span>
+						<div class="right-side twitter"></div> 
+						<div class="right-side font10">30 minutes ago</div>
+					</div>
+					<hr class="header-line">
+					<div class="data">
+						<div class="media">
+							<img class="img-content" src="images/4.png">
+						</div>
+
+						<div class="text">
+							Test Ja ทดสอบครับ >.< <a href="First">#FirstKuNGz</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="messagebox">
+					<div class="header">
+						<img class="avartar" src="images/4.png">
+						<div class="header-text" style="">FirstKuNG Test 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</div>
+						<div class="right-side gplus"></div> 
+						<div class="right-side font10" style="display:block">30 minutes ago</div>
+					</div>
+					<hr class="header-line">
+					<div class="data">
+						<div class="media">
+							<img class="img-content" src="images/4.png">
+						</div>
+						<div class="text">
+							Test Ja ทดสอบครับ >.< <a href="First">#FirstKuNGz</a>
+							1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 1 2 3 4 5 6 7 8 9 10.
+						</div>
+					</div>
+				</div>
+
+				<div class="messagebox">
+					<div class="header">
+						<img class="avartar" src="/assets/4.png">
+						<span class="header-text">First</span>
+						<div class="right-side facebook"></div> 
+						<div class="right-side font10">30 minutes ago</div>
+					</div>
+					<hr class="header-line">
+					<div class="data">
+						<div class="media">
+							<img class="img-content" src="/assets/4.png">
+						</div>
+
+						<div class="text">
+							Test Ja ทดสอบครับ >.< <a href="First">#FirstKuNGz</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="messagebox">
+					<div class="header">
+						<img class="avartar" src="images/4.png">
+						<span class="header-text">First</span>
+						<div class="right-side instagram"></div> 
+						<div class="right-side font10">30 minutes ago</div>
+					</div>
+					<hr class="header-line">
+					<div class="data">
+						<div class="media"><video height="480" width="720" controls="" preload="none">
+						<source src="https://scontent-a.xx.fbcdn.net/hvideo-ash3/v/t42.1790-2/10294589_10154027248440591_2123040055_n.mp4?oh=501ad5e874e89cb7925eccfcb6b7c2b9&oe=5356DCD9" type="video/mp4">Your browser does not support the video tag.
+						</video>
+						</div>
+
+						<div class="text">
+							Test Ja ทดสอบครับ >.< <a href="First">#FirstKuNGz</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</body>
+</html>

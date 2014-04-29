@@ -1,0 +1,24 @@
+<h1>index</h1><br>
+
+<script>
+	$(document).ready(function()
+	{
+		$("#query").keyup(function(){
+			$("#link").html( "<a href='/search/"+$("#query").val()+"' id='go' >GO</a>" )
+		});
+
+		$('#go').click(function(){
+			$('#link').html(" <img src='/images/processing.gif'>")		
+		});
+	});
+</script>
+
+
+<% if session[:access_token] == '' %>
+	<%= link_to 'Instagram Connect', auth_path %>
+<% else %>
+	<%= label_tag 'query' %>
+	<%= text_field_tag 'query', nil, placeholder: '#Tag here',remote: true %>i
+	<div id='link'>
+	</div>
+<% end %>
