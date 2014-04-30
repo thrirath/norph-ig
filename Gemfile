@@ -44,5 +44,6 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'instagram', git: 'https://github.com/Instagram/instagram-ruby-gem.git'
+gem 'instagram', '1.0.0'
+
 gem 'mysql2'
