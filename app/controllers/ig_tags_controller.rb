@@ -3,7 +3,7 @@ require 'date'
 class IgTagsController < ApplicationController
 	
 	@@media = []
-	CALLBACK_URL = 'http://localhost:3000/callback'
+	CALLBACK_URL = 'http://moew1.rails-link.com/callback'
 
 	def index
 		redirect_to auth_path
